@@ -31,8 +31,10 @@ const useStyles = makeStyles(() =>
       color:Button_color
     },
     ".p-100":{
-      padding:"100px 0;"
-    },  
+      padding:"100px 0;",
+      '@media (max-width:780px)':{
+        padding:"50px 0"
+    }},  
     "img" :{
       maxWidth:"100%!important",
       display:"block!important"

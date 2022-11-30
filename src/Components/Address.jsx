@@ -24,7 +24,7 @@ const Address = () => {
     <address>
         <ul>
             <li className={classes.flexItems}>
-                <span><LocationOnIcon className='main__color'/></span>North Main Street,Brooklyn Australia(sydney)
+                <span><LocationOnIcon className='main__color'/></span>North Main Street,Brooklyn Australia
             </li>
             <li className={classes.flexItems}><span><EmailIcon className='main__color'/></span>Email: contact@mail.com</li>
             <li className={classes.flexItems}><span><PhoneIcon className='main__color'/></span> Phone:+88 01672 506 744</li>

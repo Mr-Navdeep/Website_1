@@ -11,6 +11,9 @@ import Button from '@mui/material/Button';
 const useStyles = makeStyles({
     p_all: {
       padding:"40px 80px!important",
+      '@media (max-width:768px)':{
+        padding:"20px 32px!important"
+      }
     },
   });
 

@@ -6,13 +6,13 @@ import { Grid,  Typography ,Container }  from '@mui/material';
 const Projectsdone = () => {
   return (
     <>
-    <section class="p-100">
+    <section class="p-100 Projectsdone">
     <Container maxWidth="md">
     <Grid container spacing={2}>
     {
         projects.map(({id,headings,para}) => { return (
         
-        <Grid item xs={3} key={id}>
+        <Grid item xs={6} lg={3} key={id}>
            <Typography variant="h3" gutterBottom fontWeight={700}>
            {headings}
       </Typography>

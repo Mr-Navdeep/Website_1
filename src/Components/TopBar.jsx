@@ -8,9 +8,20 @@ import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles({
   main: {
     background: '#222328',
-    borderBottom: "1px solid #dedede",
- 
+    borderBottom: "1px solid #dedede", 
   },
+  flexElements:{
+    display:"flex",
+    justifyContent:"flex-end",
+    gap:"5px",
+    alignItems:"center",
+    flexDirection:"row",
+    '@media (max-width: 768px)' : {
+      justifyContent:"flex-start",
+      flexDirection:"column!important",
+      alignItems:"start",
+    }
+  }
 });
 
 const TopBar = () => {
@@ -25,9 +36,9 @@ const TopBar = () => {
         <Grid item xl={3} xs={12} padding={2} sx={{display:"flex",gap:"15px"}}>
           <FaFacebookF className='textWhite'/><BsTwitter className='textWhite'/> <BsGithub className='textWhite'/>
         </Grid>
-        <Grid item xl={9} xs={12} padding={2} sx={{display:"flex",justifyContent:"flex-end",gap:"20px",alignItems:"center",flexWrap:"wrap"}}>
+        <Grid item xl={9} xs={12} padding={2} className={classes.flexElements}>
          <Box component="div" className='textWhite'> <Box component="span" className='TextDarkLight'>Call Us: </Box> +1234567890</Box>
-         <Box component="div" className='textWhite' sx={{display:"flex",justifyContent:"center",gap:"5px",alignItems:"center"}}> <Box component="span" className='TextDarkLight'><GrMail/></Box> Support@gmail.com</Box>
+         <Box component="div" className='textWhite' sx={{}}> <Box component="span" className='TextDarkLight'><GrMail/></Box> Support@gmail.com</Box>
         </Grid>
       </Grid>
          </Box>
